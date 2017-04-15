@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76F4B7FB-64A4-4504-9FD9-1B345A2DD02C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hydrolics_software_project</RootNamespace>
+    <AssemblyName>hydrolics software project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dam_32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EQATEC.Analytics.Monitor, Version=3.0.206.0, Culture=neutral, PublicKeyToken=213c7c68adb58a17, processorArchitecture=MSIL" />
+    <Reference Include="QuickStart, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="RadControlSpy, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.PivotGrid, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadChart, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Desert, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.HighContrastBlack, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Blue, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2010Silver, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetro, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroBlue, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.TelerikMetroTouch, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows7, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI.Design, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikData, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="VisualStyleBuilder.Design, Version=2014.1.226.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circular Intake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Circular Intake.Designer.cs">
+      <DependentUpon>Circular Intake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Dynamic_Conditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dynamic_Conditions.Designer.cs">
+      <DependentUpon>Dynamic_Conditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntakeDesign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntakeDesign.Designer.cs">
+      <DependentUpon>IntakeDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadForm1 .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm1 .Designer.cs">
+      <DependentUpon>RadForm1 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rectangular Intake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rectangular Intake.Designer.cs">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RETANING WALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETANING WALL.Designer.cs">
+      <DependentUpon>RETANING WALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Static Condition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Static Condition.Designer.cs">
+      <DependentUpon>Static Condition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeirBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeirBody.Designer.cs">
+      <DependentUpon>WeirBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeirBody_Subsurface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeirBody_Subsurface.Designer.cs">
+      <DependentUpon>WeirBody_Subsurface.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Circular Intake.resx">
+      <DependentUpon>Circular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dynamic_Conditions.resx">
+      <DependentUpon>Dynamic_Conditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntakeDesign.resx">
+      <DependentUpon>IntakeDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadForm1 .resx">
+      <DependentUpon>RadForm1 .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rectangular Intake.am-ET.resx">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rectangular Intake.ar-DZ.resx">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rectangular Intake.en-US.resx">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rectangular Intake.resx">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rectangular Intake.yo-NG.resx">
+      <DependentUpon>Rectangular Intake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RETANING WALL.resx">
+      <DependentUpon>RETANING WALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Static Condition.resx">
+      <DependentUpon>Static Condition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeirBody.resx">
+      <DependentUpon>WeirBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeirBody_Subsurface.resx">
+      <DependentUpon>WeirBody_Subsurface.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-touch-icon-114-precomposed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple-touch-icon-72-precomposed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dam_32x32.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
